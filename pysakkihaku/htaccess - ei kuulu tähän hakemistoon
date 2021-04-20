@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/pysakkihaku/pysakki/(.*)$
+RewriteRule ^(.*)$ /pysakkihaku/index.html [L,QSA]
+
+RewriteCond %{REQUEST_URI} !^/pysakkihaku/
+RewriteRule ^(.*)$ /pysakkihaku/index.html [L,QSA]
